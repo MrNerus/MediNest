@@ -27,5 +27,12 @@ namespace MediNest.Controllers
             ResponseModel<List<ListDoctorDTO>> responseModel = await _doctorBLL.GetDoctors(paramDTO);
             return Ok(responseModel);
         }
+
+        [HttpGet("getDoctor")]
+        public async Task<IActionResult> GetDoctor(string id)
+        {
+            ResponseModel<DoctorDTO> responseModel = await _doctorBLL.GetDoctor(id);
+            return Ok(responseModel);
+        }
     }
 }

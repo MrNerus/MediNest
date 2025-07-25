@@ -11,67 +11,66 @@ using Npgsql;
 
 namespace MediNest.DAL;
 
-public class DoctorDAL(IConfiguration configuration)
+public class HospitalDAL(IConfiguration configuration)
 {
     private IConfiguration _configuration = configuration;
     private string _connectionString = configuration.GetConnectionString("DefaultConnection") ?? throw new Exception("Who is gonna setup the DBConnection? Me?");
 
-    public async Task<ResponseModel<List<ListDoctorDTO>>> GetDoctors(DataParamDTO? param)
+    public async Task<ResponseModel<List<ListHospitalDTO>>> GetHospitals(DataParamDTO? param)
     {
-        DbQuery query = BuildDoctorQuery(param);
+        DbQuery query = BuildHospitalQuery(param);
 
         if (string.IsNullOrEmpty(query.query))
-            throw new SystemException("No query generated for getting Doctor List.");
+            throw new SystemException("No query generated for getting Hospital List.");
 
         using NpgsqlConnection conn = new NpgsqlConnection(_connectionString);
         await conn.OpenAsync();
 
-        List<ListDoctorDTO> doctorDTO = [.. await conn.QueryAsync<ListDoctorDTO>(query.query, query.parameters)];
+        List<ListHospitalDTO> hospitalDTO = [.. await conn.QueryAsync<ListHospitalDTO>(query.query, query.parameters)];
 
-        return new ResponseModel<List<ListDoctorDTO>>
+        return new ResponseModel<List<ListHospitalDTO>>
         {
             Status = "Success",
             Message = "Fetched successfully.",
-            Data = doctorDTO
+            Data = hospitalDTO
         };
         
     }
 
-    public async Task<ResponseModel<DoctorDTO>> GetDoctor(int id)
+    public async Task<ResponseModel<HospitalDTO>> GetHospital(int id)
     {
         string queryBuilder = @$"
-            SELECT l.""Username"", d.""Id"", d.""Name"", d.""Gender"", d.""Phone"", 
-                d.""Email"", d.""Address"", d.""RegistrationNo"", d.""Qualification"", 0 AS ""Reputation""
-            FROM ""Doctor"" d
-            JOIN ""Login"" l ON d.""LoginId"" = l.""Id""
-            WHERE d.""Id"" = @id
+            SELECT l.""Username"", h.""Id"", h.""Name"", h.""Phone"", 
+                h.""Email"", h.""Address"", h.""PAN"", h.""Website""
+            FROM ""Hospital"" h
+            JOIN ""Login"" l ON h.""LoginId"" = l.""Id""
+            WHERE h.""Id"" = @id
         ";
 
         using NpgsqlConnection conn = new NpgsqlConnection(_connectionString);
         await conn.OpenAsync();
 
-        DoctorDTO? doctor = await conn.QueryFirstOrDefaultAsync<DoctorDTO>(queryBuilder, new { id = id });
-        if (doctor == null) throw new Exception("Doctor not found");
+        HospitalDTO? hospital = await conn.QueryFirstOrDefaultAsync<HospitalDTO>(queryBuilder, new { id = id });
+        if (hospital == null) throw new Exception("Hospital not found");
 
 
-        return new ResponseModel<DoctorDTO>
+        return new ResponseModel<HospitalDTO>
         {
             Status = "Success",
             Message = "Fetched successfully.",
-            Data = doctor
+            Data = hospital
         };
     }
 
-    public static DbQuery BuildDoctorQuery(DataParamDTO? param)
+    public static DbQuery BuildHospitalQuery(DataParamDTO? param)
     {
         Dictionary<string, object?> parameters = new Dictionary<string, object?>();
 
         var queryBuilder = new StringBuilder();
         queryBuilder.Append(@$"
-            SELECT l.""Username"", d.""Id"", d.""Name"", d.""Gender"", d.""Phone"", 
-                d.""Email"", d.""Address"", d.""RegistrationNo"", d.""Qualification"", 0 AS ""Reputation""
-            FROM ""Doctor"" d
-            JOIN ""Login"" l ON d.""LoginId"" = l.""Id""
+            SELECT l.""Username"", h.""Id"", h.""Name"", h.""Phone"", h.""Email"", h.""Address"", h.""PAN"", h.""Website""
+            FROM ""Hospital"" h
+            JOIN ""Login"" l ON h.""LoginId"" = l.""Id""
         ");
 
         // WHERE Clause
@@ -86,7 +85,7 @@ public class DoctorDAL(IConfiguration configuration)
                 if (string.IsNullOrWhiteSpace(filter.Field) || string.IsNullOrWhiteSpace(filter.Operator))
                     continue;
 
-                if (!SecurityHelper.IsValidProperty<ListDoctorDTO>(filter.Field))
+                if (!SecurityHelper.IsValidProperty<ListHospitalDTO>(filter.Field))
                     continue;
 
                 string paramName = $"@p{index++}";
@@ -94,7 +93,7 @@ public class DoctorDAL(IConfiguration configuration)
                 switch (filter.Operator?.ToLower())
                 {
                     case "like":
-                        filters.Add($@"d.""{filter.Field}"" ILIKE {paramName}");
+                        filters.Add($@"h.""{filter.Field}"" ILIKE {paramName}");
                         parameters[paramName] = $"%{filter.Value}%";
                         break;
                     case "=":
@@ -102,7 +101,7 @@ public class DoctorDAL(IConfiguration configuration)
                     case "<":
                     case ">=":
                     case "<=":
-                        filters.Add($@"d.""{filter.Field}"" {filter.Operator} {paramName}");
+                        filters.Add($@"h.""{filter.Field}"" {filter.Operator} {paramName}");
                         parameters[paramName] = filter.Value!;
                         break;
                     default:
@@ -124,14 +123,14 @@ public class DoctorDAL(IConfiguration configuration)
             foreach (var ord in param.Order)
             {
                 string orderDir = ord.Order?.ToUpper() == "DESC" ? "DESC" : "ASC";
-                orders.Add($@"d.""{ord.Field}"" {orderDir}");
+                orders.Add($@"h.""{ord.Field}"" {orderDir}");
             }
 
             queryBuilder.Append(" ORDER BY " + string.Join(", ", orders));
         }
         else
         {
-            queryBuilder.Append(" ORDER BY d.\"Id\" DESC "); // Default order
+            queryBuilder.Append(" ORDER BY h.\"Id\" DESC "); // Default order
         }
 
         // Pagination

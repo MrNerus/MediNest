@@ -35,13 +35,15 @@ builder.Services.AddAuthorization();
 
 builder.Services.AddScoped<JwtTokenService>();
 
+builder.Services.AddScoped<IdentityBLL>();
+builder.Services.AddScoped<IdentityDAL>();
 builder.Services.AddScoped<GenericBLL>();
 builder.Services.AddScoped<DoctorBLL>();
 builder.Services.AddScoped<DoctorDAL>();
 builder.Services.AddScoped<PatientBLL>();
 builder.Services.AddScoped<PatientDAL>();
-builder.Services.AddScoped<IdentityBLL>();
-builder.Services.AddScoped<IdentityDAL>();
+builder.Services.AddScoped<HospitalBLL>();
+builder.Services.AddScoped<HospitalDAL>();
 
 var app = builder.Build();
 

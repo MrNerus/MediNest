@@ -62,10 +62,18 @@ public class DoctorBLL(GenericBLL genericBLL, DoctorDAL doctorDAL)
 
     public async Task<ResponseModel<List<ListDoctorDTO>>> GetDoctors(DataParamDTO? param)
     {
-       
+
         ResponseModel<List<ListDoctorDTO>> doctors = await _doctorDAL.GetDoctors(param);
 
         return doctors;
+    }
+
+    public async Task<ResponseModel<DoctorDTO>> GetDoctor(string sid)
+    {
+        int.TryParse(sid, out int id);
+        ResponseModel<DoctorDTO> doctor = await _doctorDAL.GetDoctor(id);
+
+        return doctor;
     }
 
 }

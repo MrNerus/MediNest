@@ -1,3 +1,4 @@
+# Doctor
 ```json
 {
   "Username": "dr.smith",
@@ -44,6 +45,7 @@
 }
 ```
 
+# Patients
 ```json
 {
   "Username": "patient.ram",
@@ -86,5 +88,42 @@
   "Phone": "+977-9812233445",
   "Email": "ramlal.singh@nepalmail.com",
   "Address": "Birgunj-4, Parsa, Nepal"
+}
+```
+
+# Hospital
+```json
+{
+  "Username": "healthycare123",
+  "Password": "StrongP@ssw0rd!",
+  "Name": "Healthy Care Hospital",
+  "Address": "123 Main Road, Kathmandu",
+  "Phone": "+977-1-5551234",
+  "Email": "contact@healthycare.com",
+  "PAN": "PANHOSP123456",
+  "Website": "https://healthycare.com"
+}
+```
+```json
+{
+  "Username": "sunrisehosp",
+  "Password": "Sunrise!2024",
+  "Name": "Sunrise Hospital",
+  "Address": "Pokhara-5, Lakeside",
+  "Phone": "061-123456",
+  "Email": "info@sunrisehosp.org",
+  "PAN": "SUN123456"
+}
+```
+```json
+{
+  "Username": "citymed",
+  "Password": "CityMed#987",
+  "Name": "CityMed Multispecialty",
+  "Address": "New Baneshwor, Kathmandu",
+  "Phone": "+977-9801234567",
+  "Email": "admin@citymed.com.np",
+  "PAN": "CTY4567890",
+  "Website": "https://www.citymed.com.np"
 }
 ```
