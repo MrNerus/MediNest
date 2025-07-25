@@ -1,5 +1,9 @@
+using System.IdentityModel.Tokens.Jwt;
 using System.Reflection;
+using System.Security.Claims;
+using System.Text;
 using BCrypt.Net;
+using Microsoft.IdentityModel.Tokens;
 
 namespace MediNest.Helpers;
 

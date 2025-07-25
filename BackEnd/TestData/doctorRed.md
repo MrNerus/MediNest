@@ -43,3 +43,48 @@
   "Qualification": "MBBS, DM (Cardiology)"
 }
 ```
+
+```json
+{
+  "Username": "patient.ram",
+  "Password": "SafePass@2024",
+  "Name": "Ram Bahadur Thapa",
+  "Gender": "Male",
+  "Phone": "+977-9810001122",
+  "Email": "ram.thapa@example.com",
+  "Address": "Pokhara-13, Kaski, Nepal"
+}
+```
+```json
+{
+  "Username": "maya.karki",
+  "Password": "Maya@2025",
+  "Name": "Maya Karki",
+  "Gender": "Female",
+  "Phone": "+977-9801234567",
+  "Email": "maya.karki@example.com",
+  "Address": "Itahari-2, Sunsari, Nepal"
+}
+```
+```json
+{
+  "Username": "suman.rai",
+  "Password": "Suman#123",
+  "Name": "Suman Rai",
+  "Gender": "Male",
+  "Phone": "+977-9847654321",
+  "Email": "suman.rai@gmail.com",
+  "Address": "Baneshwor, Kathmandu, Nepal"
+}
+```
+```json
+{
+  "Username": "ramlal.singh",
+  "Password": "Ram@Old$2024",
+  "Name": "Ramlal Singh",
+  "Gender": "Male",
+  "Phone": "+977-9812233445",
+  "Email": "ramlal.singh@nepalmail.com",
+  "Address": "Birgunj-4, Parsa, Nepal"
+}
+```
