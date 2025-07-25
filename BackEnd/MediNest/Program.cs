@@ -44,6 +44,7 @@ builder.Services.AddScoped<PatientBLL>();
 builder.Services.AddScoped<PatientDAL>();
 builder.Services.AddScoped<HospitalBLL>();
 builder.Services.AddScoped<HospitalDAL>();
+builder.Services.AddScoped<MLBLL>();
 
 var app = builder.Build();
 
