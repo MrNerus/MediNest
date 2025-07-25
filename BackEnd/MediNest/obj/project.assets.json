@@ -4789,11 +4789,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\AspNetCore\\MediNest\\BackEnd\\MediNest\\MediNest.csproj",
+      "projectUniqueName": "D:\\AspNetCore\\MediNest\\BackEnd\\MediNest\\MediNest.csproj",
       "projectName": "MediNest",
-      "projectPath": "d:\\AspNetCore\\MediNest\\BackEnd\\MediNest\\MediNest.csproj",
+      "projectPath": "D:\\AspNetCore\\MediNest\\BackEnd\\MediNest\\MediNest.csproj",
       "packagesPath": "C:\\Users\\uu\\.nuget\\packages\\",
-      "outputPath": "d:\\AspNetCore\\MediNest\\BackEnd\\MediNest\\obj\\",
+      "outputPath": "D:\\AspNetCore\\MediNest\\BackEnd\\MediNest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

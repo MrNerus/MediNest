@@ -33,3 +33,11 @@ D:\AspNetCore\MediNest\BackEnd\MediNest\obj\Release\net9.0\MediNest.dll
 D:\AspNetCore\MediNest\BackEnd\MediNest\obj\Release\net9.0\refint\MediNest.dll
 D:\AspNetCore\MediNest\BackEnd\MediNest\obj\Release\net9.0\MediNest.genruntimeconfig.cache
 D:\AspNetCore\MediNest\BackEnd\MediNest\obj\Release\net9.0\ref\MediNest.dll
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\release\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\release\net9.0\Microsoft.IdentityModel.Abstractions.dll
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\release\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\release\net9.0\Microsoft.IdentityModel.Logging.dll
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\release\net9.0\Microsoft.IdentityModel.Protocols.dll
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\release\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\release\net9.0\Microsoft.IdentityModel.Tokens.dll
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\release\net9.0\System.IdentityModel.Tokens.Jwt.dll
