@@ -1,0 +1,13 @@
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\Release\net9.0\publish\MediNest.exe
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\Release\net9.0\publish\appsettings.Development.json
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\Release\net9.0\publish\appsettings.json
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\Release\net9.0\publish\MediNest.dll
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\Release\net9.0\publish\MediNest.deps.json
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\Release\net9.0\publish\MediNest.runtimeconfig.json
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\Release\net9.0\publish\BCrypt.Net-Core.dll
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\Release\net9.0\publish\Dapper.dll
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\Release\net9.0\publish\Microsoft.AspNetCore.OpenApi.dll
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\Release\net9.0\publish\Microsoft.OpenApi.dll
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\Release\net9.0\publish\Npgsql.dll
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\Release\net9.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+D:\AspNetCore\MediNest\BackEnd\MediNest\bin\Release\net9.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
