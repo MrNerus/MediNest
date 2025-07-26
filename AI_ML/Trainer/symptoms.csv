@@ -1,8 +1,1099 @@
 SymptomText,Label
-pain in head,Neurologist
-tooth pain,Dentist
-feeling sad,Therapist
-knee pain,Orthopedic
-bleeding gums,Dentist
+my head is killing me,General Physician
+i have a really bad headache,General Physician
+my head hurts so much,General Physician
+i feel like my head is going to explode,Neurologist
+my head is pounding,Neurologist
+i have this terrible headache,General Physician
+my head feels like it's splitting,Neurologist
+i get these awful headaches,Neurologist
+my head is throbbing,Neurologist
+i feel pressure in my head,General Physician
+it hurts behind my eyes,Neurologist
+my head hurts when i move,General Physician
+i have a headache every single day,Neurologist
+my head hurts and i feel sick,Neurologist
+i can't get rid of this headache,Neurologist
+my stomach is killing me,Gastroenterologist
+my stomach hurts really bad,Gastroenterologist
+i have terrible stomach pain,Gastroenterologist
+my belly is hurting,General Physician
+my stomach feels like it's burning,Gastroenterologist
+i have cramps in my stomach,Gastroenterologist
+my stomach hurts after i eat,Gastroenterologist
+i feel nauseous and my stomach hurts,Gastroenterologist
+my stomach is bloated and painful,Gastroenterologist
+i have sharp pains in my stomach,General Surgeon
+my stomach won't stop hurting,Gastroenterologist
+i feel sick to my stomach,General Physician
+my tummy really hurts,General Physician
+my stomach is upset and i feel awful,Gastroenterologist
+i have this burning feeling in my stomach,Gastroenterologist
+my chest is hurting,Cardiologist
+i have pain in my chest,Cardiologist
+my chest feels tight,Cardiologist
+i feel pressure in my chest,Cardiologist
+my chest burns,Cardiologist
+it hurts when i breathe,Pulmonologist
+my chest hurts really bad,Cardiologist
+i feel like someone is sitting on my chest,Cardiologist
+my chest is aching,Cardiologist
+i have sharp pains in my chest,Cardiologist
+my back is killing me,Orthopedist
+my back hurts so bad,Orthopedist
+i threw out my back,Orthopedist
+my lower back is in agony,Orthopedist
+my back is stiff and sore,Rheumatologist
+i can't move my back without pain,Orthopedist
+my back aches all the time,Orthopedist
+i have chronic back pain,Orthopedist
+my back went out,Orthopedist
+the pain shoots down my leg from my back,Neurologist
+my neck is so stiff,Orthopedist
+my neck hurts when i turn it,Orthopedist
+i have a crick in my neck,General Physician
+my neck is killing me,Orthopedist
+i can't turn my neck,Orthopedist
+my throat is really sore,General Physician
+my throat hurts when i swallow,Otolaryngologist
+it feels like razor blades when i swallow,Otolaryngologist
+my throat is scratchy,General Physician
+my throat feels raw,General Physician
+i think i have strep throat,General Physician
+my voice is gone,Otolaryngologist
+i sound like a frog,Otolaryngologist
+my throat feels tight,Otolaryngologist
+i can barely swallow,Otolaryngologist
+my ear is throbbing,Otolaryngologist
+my ear hurts so bad,Otolaryngologist
+i think i have an ear infection,Otolaryngologist
+my ears are ringing,Otolaryngologist
+my ear feels plugged up,Otolaryngologist
+i can't hear out of my ear,Otolaryngologist
+my ear is draining,Otolaryngologist
+my ears itch inside,Otolaryngologist
+it feels like water in my ear,Otolaryngologist
+my ear hurts when i chew,Otolaryngologist
+my eyes are burning,Ophthalmologist
+my eyes hurt so bad,Ophthalmologist
+my eyes are really red,Ophthalmologist
+my eyes itch like crazy,Allergist
+my eyes won't stop watering,Allergist
+everything looks blurry,Ophthalmologist
+i'm seeing double,Ophthalmologist
+my vision is getting worse,Ophthalmologist
+my eyes feel dry and scratchy,Ophthalmologist
+i see spots floating around,Ophthalmologist
+my eyes are sensitive to light,Ophthalmologist
+i can't see clearly,Ophthalmologist
+my eyes feel gritty,Ophthalmologist
+i lost my vision suddenly,Ophthalmologist
+my knee is killing me,Orthopedist
+my knee hurts when i walk,Orthopedist
+my ankle is throbbing,Orthopedist
+my wrist really hurts,Orthopedist
+my shoulder is in agony,Orthopedist
+my hip aches constantly,Orthopedist
+my elbow hurts when i bend it,Orthopedist
+my joints are swollen and painful,Rheumatologist
+my joints are so stiff in the morning,Rheumatologist
+all my joints ache,Rheumatologist
+my arthritis is acting up,Rheumatologist
+my joints feel like they're on fire,Rheumatologist
+my muscles are so sore,General Physician
+my whole body aches,General Physician
+my muscles are cramping,General Physician
+i feel weak all over,Neurologist
+my muscles are twitching,Neurologist
+i pulled a muscle,General Physician
+my muscles feel tight,General Physician
+i'm so sore from working out,General Physician
+my skin is breaking out,Dermatologist
+i have a rash all over,Dermatologist
+my skin itches like crazy,Dermatologist
+my skin is so red and irritated,Dermatologist
+i have these bumps on my skin,Dermatologist
+my skin is dry and flaky,Dermatologist
+i have hives everywhere,Allergist
+my eczema is flaring up,Dermatologist
+my acne is getting worse,Dermatologist
+i have this weird spot on my skin,Dermatologist
+my scalp itches constantly,Dermatologist
+i'm losing my hair,Dermatologist
+my hair is falling out in clumps,Dermatologist
+i have bald patches,Dermatologist
+my scalp has dandruff,Dermatologist
+i'm exhausted all the time,General Physician
+i'm always tired,General Physician
+i have no energy,General Physician
+i feel drained,General Physician
+i'm weak and tired,General Physician
+i can't stay awake,General Physician
+i'm tired no matter how much i sleep,General Physician
+i feel dizzy,General Physician
+the room is spinning,Otolaryngologist
+i feel lightheaded,General Physician
+i feel off balance,Neurologist
+i feel like i'm going to faint,General Physician
+everything is spinning around me,Otolaryngologist
+i keep losing my balance,Neurologist
+i feel nauseous,Gastroenterologist
+i feel like throwing up,General Physician
+i keep vomiting,Gastroenterologist
+i can't keep anything down,Gastroenterologist
+i threw up blood,Gastroenterologist
+i feel queasy,General Physician
+morning sickness is terrible,Gynecologist
+i have a fever,General Physician
+i'm burning up,General Physician
+i have chills,General Physician
+i'm shivering but i feel hot,General Physician
+my fever won't break,Infectious Disease Specialist
+i'm sweating but feel cold,General Physician
+i ache all over with fever,General Physician
+i can't stop coughing,General Physician
+my cough won't go away,Pulmonologist
+i'm coughing up blood,Pulmonologist
+my cough is dry and hacking,Pulmonologist
+i'm coughing up green stuff,Pulmonologist
+my chest hurts when i cough,Pulmonologist
+i have a barking cough,Pulmonologist
+i can't catch my breath,Pulmonologist
+i'm short of breath,Pulmonologist
+i feel like i can't breathe,Pulmonologist
+i'm wheezing,Pulmonologist
+my chest feels congested,Pulmonologist
+it's hard to breathe,Pulmonologist
+i get winded easily,Cardiologist
+i can't sleep,General Physician
+i have insomnia,Neurologist
+i toss and turn all night,General Physician
+i snore really loud,Otolaryngologist
+i stop breathing in my sleep,Pulmonologist
+i have nightmares,Psychiatrist
+i sleepwalk,Neurologist
+i'm anxious all the time,Psychiatrist
+i have panic attacks,Psychiatrist
+i feel depressed,Psychiatrist
+my mood swings are crazy,Psychiatrist
+i'm stressed out,Psychiatrist
+i feel overwhelmed,Psychiatrist
+i can't concentrate,Psychiatrist
+my memory is getting worse,Neurologist
+i forget everything,Neurologist
+i'm confused about things,Neurologist
+i'm losing weight without trying,General Physician
+i can't seem to lose weight,Endocrinologist
+i keep gaining weight,Endocrinologist
+i'm getting fat,Endocrinologist
+i have to pee all the time,Urologist
+it burns when i pee,Urologist
+my pee is bloody,Urologist
+my urine is dark,General Physician
+my pee is cloudy,Urologist
+i can't hold my bladder,Urologist
+i wet the bed,Urologist
+i'm constipated,General Physician
+i can't poop,General Physician
+my stools are hard,General Physician
+i have diarrhea,General Physician
+my bowel movements are loose,General Physician
+i have bloody diarrhea,Gastroenterologist
+i'm gassy and bloated,Gastroenterologist
+i have heartburn,Gastroenterologist
+my stomach acid is acting up,Gastroenterologist
+i can't swallow properly,Gastroenterologist
+i have no appetite,General Physician
+food doesn't taste good anymore,General Physician
+i don't want to eat,General Physician
+my period is late,Gynecologist
+my periods are really heavy,Gynecologist
+my period cramps are awful,Gynecologist
+i don't get my period anymore,Gynecologist
+i bleed between periods,Gynecologist
+i have pms symptoms,Gynecologist
+i'm going through menopause,Gynecologist
+i get hot flashes,Gynecologist
+my breasts hurt,Gynecologist
+i found a lump in my breast,Oncologist
+my breasts are leaking,Gynecologist
+i have vaginal discharge,Gynecologist
+my vagina itches,Gynecologist
+i have pelvic pain,Gynecologist
+i can't get an erection,Urologist
+i finish too quickly,Urologist
+i have no sex drive,Urologist
+my testicles hurt,Urologist
+my testicles are swollen,Urologist
+i have prostate problems,Urologist
+my blood pressure is high,Cardiologist
+my blood pressure is low,Cardiologist
+my heart is racing,Cardiologist
+my heart skips beats,Cardiologist
+my heart pounds,Cardiologist
+my heart beats too slow,Cardiologist
+i have a heart murmur,Cardiologist
+my legs are swollen,Cardiologist
+my feet are puffy,Cardiologist
+my legs cramp at night,General Physician
+my legs hurt,General Physician
+i have varicose veins,Phlebologist
+i bruise easily,Hematologist
+i bleed too much,Hematologist
+my nose bleeds a lot,Otolaryngologist
+my gums bleed,Dentist
+my tooth is killing me,Dentist
+i have a toothache,Dentist
+my jaw hurts,Dentist
+i have sores in my mouth,Dentist
+my breath smells bad,Dentist
+my gums are swollen,Dentist
+my teeth are sensitive,Dentist
+my wisdom teeth hurt,Oral Surgeon
+my hands are numb,Neurologist
+my fingers tingle,Neurologist
+my hands hurt,General Physician
+i think i have carpal tunnel,Orthopedist
+my hands are swollen,Rheumatologist
+my fingers are stiff,Rheumatologist
+my feet are numb,Neurologist
+my feet hurt,Podiatrist
+my heels hurt when i walk,Podiatrist
+my toes hurt,Podiatrist
+i have an ingrown toenail,Podiatrist
+my feet ache,Podiatrist
+i have bunions,Podiatrist
+i have athlete's foot,Dermatologist
+my feet are always cold,General Physician
+my glands are swollen,General Physician
+i have lumps in my neck,General Physician
+my lymph nodes are enlarged,Oncologist
+i have lumps under my arms,General Physician
+i'm allergic to something,Allergist
+i have food allergies,Allergist
+i have hay fever,Allergist
+my nose runs constantly,General Physician
+my nose is stuffed up,General Physician
+my sinuses hurt,General Physician
+i have a sinus infection,General Physician
+i keep sneezing,Allergist
+my nose itches,Allergist
+i can't smell anything,Otolaryngologist
+i can't taste anything,General Physician
+my mouth tastes funny,General Physician
+my mouth is dry,General Physician
+i drool too much,General Physician
+it's hard to swallow,Gastroenterologist
+i feel like i'm choking,Gastroenterologist
+i have a lump in my throat,Otolaryngologist
+my voice changed,Otolaryngologist
+i can't talk right,Neurologist
+my speech is slurred,Neurologist
+i stutter,Speech Therapist
+my hands shake,Neurologist
+i have tremors,Neurologist
+my muscles twitch,Neurologist
+i had a seizure,Neurologist
+i fainted,Neurologist
+i blacked out,Neurologist
+i can't move my face,Neurologist
+my face is numb,Neurologist
+my face hurts,Neurologist
+i have bell's palsy,Neurologist
+i get migraines,Neurologist
+i have cluster headaches,Neurologist
+i have tension headaches,General Physician
+i have sinus headaches,General Physician
+i think i have diabetes,Endocrinologist
+my blood sugar is high,Endocrinologist
+my blood sugar is low,Endocrinologist
+i'm always thirsty,Endocrinologist
+i'm always hungry,Endocrinologist
+i have thyroid problems,Endocrinologist
+my thyroid is overactive,Endocrinologist
+my thyroid is underactive,Endocrinologist
+i have a goiter,Endocrinologist
+my hormones are out of whack,Endocrinologist
+my bones hurt,Orthopedist
+i think i broke my bone,Orthopedist
+i sprained my ankle,Orthopedist
+i tore a ligament,Orthopedist
+i have a herniated disc,Orthopedist
+i have sciatica,Neurologist
+i have a pinched nerve,Neurologist
+i have carpal tunnel syndrome,Neurologist
+i have tennis elbow,Orthopedist
+my shoulder is frozen,Orthopedist
+i hurt my rotator cuff,Orthopedist
+i injured my knee,Orthopedist
+i tore my acl,Orthopedist
+i tore my meniscus,Orthopedist
+i have shin splints,Orthopedist
+i have a stress fracture,Orthopedist
+i have plantar fasciitis,Podiatrist
+my achilles tendon hurts,Orthopedist
+i have a heel spur,Podiatrist
+my bunion hurts,Podiatrist
+i have hammer toe,Podiatrist
+my toenail is infected,Podiatrist
+i have a fungal infection,Dermatologist
+i have a yeast infection,Gynecologist
+i have a uti,Urologist
+i have a kidney infection,Urologist
+i have a bladder infection,Urologist
+i have kidney stones,Urologist
+my gallbladder hurts,General Surgeon
+i have gallstones,General Surgeon
+i think i have appendicitis,General Surgeon
+i have a hernia,General Surgeon
+i have hemorrhoids,General Surgeon
+my bottom hurts,General Surgeon
+i have rectal bleeding,Gastroenterologist
+my bowels are blocked,General Surgeon
+i have diverticulitis,Gastroenterologist
+i have inflammatory bowel disease,Gastroenterologist
+i have crohn's disease,Gastroenterologist
+i have ulcerative colitis,Gastroenterologist
+i have celiac disease,Gastroenterologist
+i'm lactose intolerant,Gastroenterologist
+i have food poisoning,General Physician
+i have the stomach flu,General Physician
+i have a viral infection,General Physician
+i have a bacterial infection,Infectious Disease Specialist
+i have strep throat,General Physician
+i have bronchitis,Pulmonologist
+i have pneumonia,Pulmonologist
+my asthma is acting up,Pulmonologist
+i have copd,Pulmonologist
+i have emphysema,Pulmonologist
+i have a lung infection,Pulmonologist
+i have a chest infection,Pulmonologist
+i might have tuberculosis,Pulmonologist
+i'm worried about lung cancer,Oncologist
+i'm worried about breast cancer,Oncologist
+i'm worried about colon cancer,Oncologist
+i'm worried about prostate cancer,Urologist
+i'm worried about skin cancer,Dermatologist
+i'm worried about a brain tumor,Neurologist
+i have liver disease,Hepatologist
+i have hepatitis,Hepatologist
+i have cirrhosis,Hepatologist
+i have fatty liver,Hepatologist
+my skin is yellow,Hepatologist
+my eyes are yellow,Hepatologist
+my urine is dark,Hepatologist
+my stools are pale,Hepatologist
+my belly is swollen,Hepatologist
+i'm retaining fluid,Cardiologist
+i have edema,Cardiologist
+i have kidney disease,Nephrologist
+my kidneys are failing,Nephrologist
+i need dialysis,Nephrologist
+my creatinine is high,Nephrologist
+i have protein in my urine,Nephrologist
+i have blood in my urine,Urologist
+i think i have lupus,Rheumatologist
+i have rheumatoid arthritis,Rheumatologist
+i have fibromyalgia,Rheumatologist
+i have chronic pain,Pain Management Specialist
+i have neuropathy,Neurologist
+i have diabetic neuropathy,Endocrinologist
+i have peripheral neuropathy,Neurologist
+my sciatica is killing me,Neurologist
+i have chronic fatigue syndrome,General Physician
+i have an autoimmune disease,Rheumatologist
+i think i have multiple sclerosis,Neurologist
+i think i have parkinson's disease,Neurologist
+i think i have alzheimer's,Neurologist
+i think i have dementia,Neurologist
+i think i had a stroke,Neurologist
+i think i had a mini stroke,Neurologist
+i have brain fog,Neurologist
+my thinking is getting worse,Neurologist
+i think i have adhd,Psychiatrist
+i think i'm bipolar,Psychiatrist
+i think i have schizophrenia,Psychiatrist
+i have ocd,Psychiatrist
+i have ptsd,Psychiatrist
+i have an eating disorder,Psychiatrist
+i have a drinking problem,Psychiatrist
+i have a drug problem,Psychiatrist
+i'm going through withdrawal,Psychiatrist
+i have panic disorder,Psychiatrist
+i have social anxiety,Psychiatrist
+i have phobias,Psychiatrist
+i'm thinking about suicide,Psychiatrist
+i want to hurt myself,Psychiatrist
+i'm being abused,Psychiatrist
+i have trauma,Psychiatrist
+i need grief counseling,Psychiatrist
+i need marriage counseling,Psychiatrist
+my child has behavior problems,Pediatrician
+my child has developmental delays,Pediatrician
+i think my child has autism,Pediatrician
+my child has learning disabilities,Pediatrician
+my child has speech delays,Speech Therapist
+my child can't hear well,Otolaryngologist
+my child can't see well,Ophthalmologist
+my child has lazy eye,Ophthalmologist
+my child's eyes are crossed,Ophthalmologist
+my child is color blind,Ophthalmologist
+i can't see at night,Ophthalmologist
+i have cataracts,Ophthalmologist
+i have glaucoma,Ophthalmologist
+i have macular degeneration,Ophthalmologist
+i have diabetic eye problems,Ophthalmologist
+i see floaters,Ophthalmologist
+i see flashes of light,Ophthalmologist
+my eye twitches,Ophthalmologist
+i have a stye,Ophthalmologist
+i have pink eye,Ophthalmologist
+my eyes are dry,Ophthalmologist
+my eyes are allergic,Allergist
+my contacts bother me,Ophthalmologist
+i think i'm pregnant,Gynecologist
+i have morning sickness,Gynecologist
+i'm having pregnancy complications,Gynecologist
+i had a miscarriage,Gynecologist
+i can't get pregnant,Reproductive Endocrinologist
+we're having fertility problems,Reproductive Endocrinologist
+i have pcos,Gynecologist
+i have endometriosis,Gynecologist
+i have ovarian cysts,Gynecologist
+i have fibroids,Gynecologist
+i need a pap smear,Gynecologist
+my pap smear was abnormal,Gynecologist
+i think i have an std,General Physician
+i think i have hiv,Infectious Disease Specialist
+i think i have herpes,General Physician
+i think i have syphilis,General Physician
+i think i have gonorrhea,Urologist
+i think i have chlamydia,Urologist
+i think i have hpv,Gynecologist
+i have genital warts,Dermatologist
+i have cold sores,General Physician
+i have canker sores,General Physician
+i have thrush in my mouth,General Physician
+i have a nail fungus,Dermatologist
+i have ringworm,Dermatologist
+i have impetigo,Dermatologist
+i have cellulitis,General Physician
+i have an abscess,General Surgeon
+i have a boil,General Physician
+i have a cyst,General Surgeon
+i have a fatty tumor,General Surgeon
+i have warts,Dermatologist
+my mole changed,Dermatologist
+i have a birthmark,Dermatologist
+i have age spots,Dermatologist
+i have wrinkles,Dermatologist
+i have sun damage,Dermatologist
+i have stretch marks,Dermatologist
+i have scars,Dermatologist
+i got burned,General Physician
+my wound won't heal,General Physician
+i have cuts and scrapes,General Physician
+i got stung by a bee,General Physician
+i got bit by a spider,General Physician
+i got bit by a snake,Emergency Medicine
+i think i was poisoned,Emergency Medicine
+i think i overdosed,Emergency Medicine
+i think i'm having a heart attack,Cardiologist
+i think i'm having a stroke,Neurologist
+i'm having a severe allergic reaction,Emergency Medicine
+i think i broke my bone,Orthopedist
+i hit my head,Neurologist
+i have a concussion,Neurologist
+i have whiplash,Orthopedist
+i have a sports injury,Sports Medicine
+i hurt myself exercising,Sports Medicine
+i'm dehydrated,General Physician
+i have heat exhaustion,General Physician
+i have heat stroke,Emergency Medicine
+i have hypothermia,Emergency Medicine
+i have frostbite,Emergency Medicine
+i have altitude sickness,General Physician
+i have jet lag,General Physician
+i need travel medicine advice,General Physician
+i need vaccinations,General Physician
+i need a physical exam,General Physician
+my blood test results are abnormal,General Physician
+my cholesterol is high,Cardiologist
+i need diabetes screening,Endocrinologist
+i need cancer screening,Oncologist
+i need a colonoscopy,Gastroenterologist
+i need a mammogram,Gynecologist
+i need a bone density test,Endocrinologist
+i need an eye exam,Ophthalmologist
+i need a hearing test,Otolaryngologist
+i need a dental checkup,Dentist
+i need skin cancer screening,Dermato
+i have headache,General Physician
+my head hurts,General Physician
+head pain,General Physician
 severe headache,Neurologist
-I feel depressed,Therapist
+migraine headache,Neurologist
+throbbing head pain,Neurologist
+pressure in head,General Physician
+pain behind eyes,Neurologist
+cluster headaches,Neurologist
+tension headache,General Physician
+headache with nausea,Neurologist
+chronic headaches,Neurologist
+splitting headache,Neurologist
+headache every day,Neurologist
+headache and dizziness,Neurologist
+my stomach hurts,Gastroenterologist
+stomach pain,Gastroenterologist
+upset stomach,Gastroenterologist
+stomach ache,General Physician
+nausea with pain,Gastroenterologist
+cramps in abdomen,Gastroenterologist
+abdominal pain,General Physician
+severe stomach pain,Gastroenterologist
+burning stomach pain,Gastroenterologist
+stomach pain after eating,Gastroenterologist
+stomach pain and bloating,Gastroenterologist
+upper stomach pain,Gastroenterologist
+lower stomach pain,General Physician
+sharp stomach pain,General Surgeon
+stomach pain and vomiting,Gastroenterologist
+chest pain,Cardiologist
+chest hurts,Cardiologist
+sharp chest pain,Cardiologist
+chest tightness,Cardiologist
+pressure in chest,Cardiologist
+burning chest pain,Cardiologist
+chest pain when breathing,Pulmonologist
+chest pain and shortness of breath,Cardiologist
+left chest pain,Cardiologist
+right chest pain,Pulmonologist
+back pain,Orthopedist
+lower back pain,Orthopedist
+upper back pain,Orthopedist
+back pain and stiffness,Rheumatologist
+chronic back pain,Orthopedist
+sharp back pain,Orthopedist
+back pain when walking,Orthopedist
+back pain radiating down leg,Neurologist
+neck pain,Orthopedist
+stiff neck,General Physician
+neck pain and headache,Neurologist
+neck hurts to turn,Orthopedist
+sore throat,General Physician
+throat pain,Otolaryngologist
+throat hurts when swallowing,Otolaryngologist
+strep throat symptoms,General Physician
+dry throat,General Physician
+scratchy throat,General Physician
+hoarse voice,Otolaryngologist
+lost voice,Otolaryngologist
+throat feels tight,Otolaryngologist
+ear pain,Otolaryngologist
+ear hurts,Otolaryngologist
+ear infection,Otolaryngologist
+ringing in ears,Otolaryngologist
+ear pressure,Otolaryngologist
+ears feel clogged,Otolaryngologist
+hearing loss,Otolaryngologist
+ear discharge,Otolaryngologist
+itchy ears,Otolaryngologist
+eye pain,Ophthalmologist
+eyes hurt,Ophthalmologist
+eye irritation,Ophthalmologist
+red eyes,Ophthalmologist
+itchy eyes,Allergist
+watery eyes,Allergist
+blurred vision,Ophthalmologist
+double vision,Ophthalmologist
+vision problems,Ophthalmologist
+eye discharge,Ophthalmologist
+burning eyes,Ophthalmologist
+dry eyes,Ophthalmologist
+floaters in vision,Ophthalmologist
+sudden vision loss,Ophthalmologist
+joint pain,Rheumatologist
+knee pain,Orthopedist
+ankle pain,Orthopedist
+wrist pain,Orthopedist
+shoulder pain,Orthopedist
+hip pain,Orthopedist
+elbow pain,Orthopedist
+joint swelling,Rheumatologist
+joint stiffness,Rheumatologist
+arthritis pain,Rheumatologist
+joint pain and swelling,Rheumatologist
+muscle pain,General Physician
+muscle aches,General Physician
+muscle cramps,General Physician
+muscle weakness,Neurologist
+muscle spasms,Neurologist
+muscle strain,General Physician
+sore muscles,General Physician
+muscle fatigue,General Physician
+skin rash,Dermatologist
+itchy skin,Dermatologist
+red rash,Dermatologist
+skin irritation,Dermatologist
+hives,Allergist
+eczema,Dermatologist
+psoriasis,Dermatologist
+acne,Dermatologist
+skin bumps,Dermatologist
+dry skin,Dermatologist
+oily skin,Dermatologist
+skin discoloration,Dermatologist
+mole changes,Dermatologist
+hair loss,Dermatologist
+bald spots,Dermatologist
+thinning hair,Dermatologist
+scalp itching,Dermatologist
+dandruff,Dermatologist
+fatigue,General Physician
+tired all the time,General Physician
+exhaustion,General Physician
+no energy,General Physician
+weakness,General Physician
+chronic fatigue,General Physician
+always sleepy,General Physician
+dizziness,General Physician
+feeling dizzy,General Physician
+lightheaded,General Physician
+vertigo,Otolaryngologist
+balance problems,Neurologist
+spinning sensation,Otolaryngologist
+room spinning,Otolaryngologist
+nausea,Gastroenterologist
+feeling sick,General Physician
+queasy stomach,Gastroenterologist
+morning sickness,Gynecologist
+vomiting,Gastroenterologist
+throwing up,General Physician
+can't keep food down,Gastroenterologist
+blood in vomit,Gastroenterologist
+fever,General Physician
+high temperature,General Physician
+chills,General Physician
+fever and chills,Infectious Disease Specialist
+night sweats,General Physician
+body aches with fever,General Physician
+fever won't break,Infectious Disease Specialist
+low grade fever,General Physician
+cough,General Physician
+persistent cough,Pulmonologist
+dry cough,Pulmonologist
+wet cough,Pulmonologist
+cough with phlegm,Pulmonologist
+bloody cough,Pulmonologist
+chronic cough,Pulmonologist
+cough and fever,General Physician
+whooping cough,Pulmonologist
+shortness of breath,Pulmonologist
+can't breathe,Pulmonologist
+difficulty breathing,Pulmonologist
+wheezing,Pulmonologist
+chest congestion,Pulmonologist
+breathing problems,Pulmonologist
+out of breath,Cardiologist
+rapid breathing,Pulmonologist
+sleep problems,General Physician
+can't sleep,General Physician
+insomnia,Neurologist
+sleep apnea,Pulmonologist
+snoring,Otolaryngologist
+restless sleep,Neurologist
+nightmares,Psychiatrist
+sleepwalking,Neurologist
+anxiety,Psychiatrist
+panic attacks,Psychiatrist
+depression,Psychiatrist
+mood swings,Psychiatrist
+stress,Psychiatrist
+feeling overwhelmed,Psychiatrist
+can't concentrate,Psychiatrist
+memory problems,Neurologist
+forgetfulness,Neurologist
+confusion,Neurologist
+weight loss,General Physician
+losing weight,Endocrinologist
+unexplained weight loss,Oncologist
+can't gain weight,General Physician
+weight gain,Endocrinologist
+gaining weight,Endocrinologist
+can't lose weight,Endocrinologist
+obesity,Endocrinologist
+frequent urination,Urologist
+urinating often,Endocrinologist
+painful urination,Urologist
+burning when urinating,Urologist
+blood in urine,Urologist
+dark urine,General Physician
+cloudy urine,Urologist
+can't urinate,Urologist
+urinary incontinence,Urologist
+bed wetting,Urologist
+constipation,General Physician
+can't have bowel movement,Gastroenterologist
+hard stools,General Physician
+irregular bowel movements,Gastroenterologist
+diarrhea,General Physician
+loose stools,General Physician
+frequent diarrhea,Gastroenterologist
+bloody diarrhea,Gastroenterologist
+chronic diarrhea,Gastroenterologist
+gas and bloating,Gastroenterologist
+heartburn,Gastroenterologist
+acid reflux,Gastroenterologist
+indigestion,General Physician
+stomach burning,Gastroenterologist
+swallowing problems,Gastroenterologist
+loss of appetite,General Physician
+no appetite,General Physician
+don't want to eat,General Physician
+food doesn't taste good,General Physician
+irregular periods,Gynecologist
+missed period,Gynecologist
+heavy periods,Gynecologist
+painful periods,Gynecologist
+period cramps,Gynecologist
+no period,Gynecologist
+bleeding between periods,Gynecologist
+pms symptoms,Gynecologist
+menopause symptoms,Gynecologist
+hot flashes,Gynecologist
+breast pain,Gynecologist
+breast lump,Oncologist
+breast discharge,Gynecologist
+swollen breasts,Gynecologist
+vaginal discharge,Gynecologist
+vaginal itching,Gynecologist
+vaginal bleeding,Gynecologist
+pelvic pain,Gynecologist
+erectile dysfunction,Urologist
+premature ejaculation,Urologist
+low libido,Urologist
+testicular pain,Urologist
+swollen testicles,Urologist
+prostate problems,Urologist
+blood pressure high,Cardiologist
+low blood pressure,Cardiologist
+heart palpitations,Cardiologist
+irregular heartbeat,Cardiologist
+fast heart rate,Cardiologist
+slow heart rate,Cardiologist
+heart murmur,Cardiologist
+swollen legs,Cardiologist
+swollen feet,Cardiologist
+leg cramps,General Physician
+leg pain,General Physician
+varicose veins,Phlebologist
+blood clots,Hematologist
+easy bruising,Hematologist
+excessive bleeding,Hematologist
+nosebleeds,Otolaryngologist
+bleeding gums,Dentist
+tooth pain,Dentist
+toothache,Dentist
+dental pain,Dentist
+jaw pain,Dentist
+mouth sores,Dentist
+bad breath,Dentist
+gum disease,Dentist
+sensitive teeth,Dentist
+wisdom tooth pain,Oral Surgeon
+numbness in hands,Neurologist
+tingling in fingers,Neurologist
+hand pain,General Physician
+carpal tunnel,Orthopedist
+arthritis in hands,Rheumatologist
+swollen fingers,Rheumatologist
+trigger finger,Orthopedist
+numbness in feet,Neurologist
+foot pain,Podiatrist
+heel pain,Podiatrist
+toe pain,Podiatrist
+ingrown toenail,Podiatrist
+plantar fasciitis,Podiatrist
+bunions,Podiatrist
+athlete's foot,Dermatologist
+cold feet,General Physician
+swollen lymph nodes,General Physician
+swollen glands,General Physician
+enlarged lymph nodes,Oncologist
+lumps in neck,General Physician
+lumps under arms,General Physician
+allergic reactions,Allergist
+food allergies,Allergist
+seasonal allergies,Allergist
+hay fever,Allergist
+runny nose,General Physician
+stuffy nose,General Physician
+nasal congestion,General Physician
+sinus pressure,General Physician
+sinus infection,General Physician
+post nasal drip,Otolaryngologist
+sneezing,Allergist
+itchy nose,Allergist
+loss of smell,Otolaryngologist
+loss of taste,General Physician
+bad taste in mouth,General Physician
+dry mouth,General Physician
+excessive saliva,General Physician
+difficulty swallowing,Gastroenterologist
+choking sensation,Gastroenterologist
+lump in throat,Otolaryngologist
+voice changes,Otolaryngologist
+speech problems,Neurologist
+slurred speech,Neurologist
+stuttering,Speech Therapist
+tremors,Neurologist
+shaking hands,Neurologist
+muscle twitching,Neurologist
+seizures,Neurologist
+fainting,Neurologist
+blackouts,Neurologist
+loss of consciousness,Neurologist
+paralysis,Neurologist
+facial numbness,Neurologist
+facial pain,Neurologist
+bell's palsy,Neurologist
+trigeminal neuralgia,Neurologist
+migraine with aura,Neurologist
+cluster headache,Neurologist
+tension headache,General Physician
+sinus headache,General Physician
+hormonal headache,Gynecologist
+diabetic symptoms,Endocrinologist
+blood sugar high,Endocrinologist
+blood sugar low,Endocrinologist
+excessive thirst,Endocrinologist
+frequent hunger,Endocrinologist
+thyroid problems,Endocrinologist
+hyperthyroidism,Endocrinologist
+hypothyroidism,Endocrinologist
+goiter,Endocrinologist
+hormone imbalance,Endocrinologist
+adrenal fatigue,Endocrinologist
+cushing's syndrome,Endocrinologist
+addison's disease,Endocrinologist
+growth hormone deficiency,Endocrinologist
+osteoporosis,Endocrinologist
+bone pain,Orthopedist
+fracture symptoms,Orthopedist
+broken bone,Orthopedist
+sprained ankle,Orthopedist
+torn ligament,Orthopedist
+herniated disc,Orthopedist
+sciatica,Neurologist
+pinched nerve,Neurologist
+carpal tunnel syndrome,Neurologist
+tennis elbow,Orthopedist
+frozen shoulder,Orthopedist
+rotator cuff injury,Orthopedist
+knee injury,Orthopedist
+acl tear,Orthopedist
+meniscus tear,Orthopedist
+shin splints,Orthopedist
+stress fracture,Orthopedist
+plantar fasciitis,Podiatrist
+achilles tendon pain,Orthopedist
+heel spur,Podiatrist
+bunion pain,Podiatrist
+hammer toe,Podiatrist
+ingrown toenail infection,Podiatrist
+fungal infection,Dermatologist
+yeast infection,Gynecologist
+urinary tract infection,Urologist
+kidney infection,Urologist
+bladder infection,Urologist
+kidney stones,Urologist
+gallbladder pain,General Surgeon
+gallstones,General Surgeon
+appendicitis symptoms,General Surgeon
+hernia,General Surgeon
+hemorrhoids,General Surgeon
+anal pain,General Surgeon
+rectal bleeding,Gastroenterologist
+bowel obstruction,General Surgeon
+diverticulitis,Gastroenterologist
+inflammatory bowel disease,Gastroenterologist
+crohn's disease,Gastroenterologist
+ulcerative colitis,Gastroenterologist
+celiac disease,Gastroenterologist
+lactose intolerance,Gastroenterologist
+food poisoning,General Physician
+stomach flu,General Physician
+viral infection,General Physician
+bacterial infection,Infectious Disease Specialist
+strep throat,General Physician
+bronchitis,Pulmonologist
+pneumonia,Pulmonologist
+asthma,Pulmonologist
+copd,Pulmonologist
+emphysema,Pulmonologist
+lung infection,Pulmonologist
+chest infection,Pulmonologist
+tuberculosis,Pulmonologist
+lung cancer symptoms,Oncologist
+breast cancer symptoms,Oncologist
+colon cancer symptoms,Oncologist
+prostate cancer symptoms,Urologist
+skin cancer symptoms,Dermatologist
+brain tumor symptoms,Neurologist
+liver disease,Hepatologist
+hepatitis,Hepatologist
+cirrhosis,Hepatologist
+fatty liver,Hepatologist
+jaundice,Hepatologist
+yellow eyes,Hepatologist
+dark urine,Hepatologist
+pale stools,Hepatologist
+abdominal swelling,Hepatologist
+fluid retention,Cardiologist
+edema,Cardiologist
+kidney disease,Nephrologist
+kidney failure,Nephrologist
+dialysis,Nephrologist
+high creatinine,Nephrologist
+protein in urine,Nephrologist
+blood in urine,Urologist
+lupus symptoms,Rheumatologist
+rheumatoid arthritis,Rheumatologist
+fibromyalgia,Rheumatologist
+chronic pain,Pain Management Specialist
+neuropathy,Neurologist
+diabetic neuropathy,Endocrinologist
+peripheral neuropathy,Neurologist
+sciatica pain,Neurologist
+chronic fatigue syndrome,General Physician
+autoimmune disease,Rheumatologist
+multiple sclerosis,Neurologist
+parkinson's disease,Neurologist
+alzheimer's disease,Neurologist
+dementia,Neurologist
+stroke symptoms,Neurologist
+mini stroke,Neurologist
+tia symptoms,Neurologist
+brain fog,Neurologist
+cognitive decline,Neurologist
+adhd symptoms,Psychiatrist
+bipolar disorder,Psychiatrist
+schizophrenia,Psychiatrist
+ocd symptoms,Psychiatrist
+ptsd symptoms,Psychiatrist
+eating disorder,Psychiatrist
+substance abuse,Psychiatrist
+alcohol addiction,Psychiatrist
+drug addiction,Psychiatrist
+withdrawal symptoms,Psychiatrist
+panic disorder,Psychiatrist
+social anxiety,Psychiatrist
+phobias,Psychiatrist
+suicide thoughts,Psychiatrist
+self harm,Psychiatrist
+domestic violence,Psychiatrist
+trauma symptoms,Psychiatrist
+grief counseling,Psychiatrist
+marriage counseling,Psychiatrist
+family therapy,Psychiatrist
+child behavior problems,Pediatrician
+developmental delays,Pediatrician
+autism symptoms,Pediatrician
+learning disabilities,Pediatrician
+speech delay,Speech Therapist
+hearing problems,Otolaryngologist
+vision problems in children,Ophthalmologist
+lazy eye,Ophthalmologist
+crossed eyes,Ophthalmologist
+color blindness,Ophthalmologist
+night blindness,Ophthalmologist
+cataracts,Ophthalmologist
+glaucoma,Ophthalmologist
+macular degeneration,Ophthalmologist
+diabetic retinopathy,Ophthalmologist
+eye floaters,Ophthalmologist
+eye flashes,Ophthalmologist
+eye twitching,Ophthalmologist
+stye,Ophthalmologist
+pink eye,Ophthalmologist
+dry eye syndrome,Ophthalmologist
+eye allergies,Allergist
+contact lens problems,Ophthalmologist
+pregnancy symptoms,Gynecologist
+morning sickness,Gynecologist
+pregnancy complications,Gynecologist
+miscarriage,Gynecologist
+infertility,Reproductive Endocrinologist
+fertility problems,Reproductive Endocrinologist
+pcos symptoms,Gynecologist
+endometriosis,Gynecologist
+ovarian cysts,Gynecologist
+fibroids,Gynecologist
+cervical cancer screening,Gynecologist
+pap smear abnormal,Gynecologist
+std symptoms,General Physician
+hiv symptoms,Infectious Disease Specialist
+herpes symptoms,General Physician
+syphilis symptoms,General Physician
+gonorrhea symptoms,Urologist
+chlamydia symptoms,Urologist
+hpv symptoms,Gynecologist
+genital warts,Dermatologist
+cold sores,General Physician
+canker sores,General Physician
+oral thrush,General Physician
+fungal nail infection,Dermatologist
+ringworm,Dermatologist
+impetigo,Dermatologist
+cellulitis,General Physician
+abscess,General Surgeon
+boils,General Physician
+cysts,General Surgeon
+lipoma,General Surgeon
+warts,Dermatologist
+moles,Dermatologist
+birthmarks,Dermatologist
+age spots,Dermatologist
+wrinkles,Dermatologist
+sun damage,Dermatologist
+stretch marks,Dermatologist
+scars,Dermatologist
+burn treatment,General Physician
+wound healing,General Physician
+cuts and scrapes,General Physician
+bee sting,General Physician
+spider bite,General Physician
+snake bite,Emergency Medicine
+poisoning,Emergency Medicine
+overdose,Emergency Medicine
+heart attack symptoms,Cardiologist
+stroke symptoms,Neurologist
+anaphylaxis,Allergist
+severe allergic reaction,Emergency Medicine
+broken bones,Orthopedist
+head injury,Neurologist
+concussion,Neurologist
+whiplash,Orthopedist
+sports injury,Sports Medicine
+exercise injury,Sports Medicine
+dehydration,General Physician
+heat exhaustion,General Physician
+heat stroke,Emergency Medicine
+hypothermia,Emergency Medicine
+frostbite,Emergency Medicine
+altitude sickness,General Physician
+jet lag,General Physician
+travel medicine,General Physician
+vaccination,General Physician
+physical exam,General Physician
+blood test results,General Physician
+cholesterol high,Cardiologist
+diabetes screening,Endocrinologist
+cancer screening,Oncologist
+colonoscopy,Gastroenterologist
+mammogram,Gynecologist
+bone density test,Endocrinologist
+eye exam,Ophthalmologist
+hearing test,Otolaryngologist
+dental checkup,Dentist
+skin cancer screening,Dermatologist
