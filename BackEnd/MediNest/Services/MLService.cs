@@ -15,18 +15,19 @@ public class MLService(IConfiguration config)
     public static string PredictDoctorCategory(string symptom)
     {
         var mlContext = new MLContext();
-        var modelPath = Path.Combine(Environment.CurrentDirectory, "symptom_model.zip");
 
-        ITransformer loadedModel;
-        using (var stream = new FileStream(modelPath, FileMode.Open, FileAccess.Read, FileShare.Read))
+        var modelPath = "symptom_model.zip";
+        if (!File.Exists(modelPath))
         {
-            loadedModel = mlContext.Model.Load(stream, out var modelInputSchema);
+            throw new Exception("Model file not found.");
         }
 
-        var predictor = mlContext.Model.CreatePredictionEngine<SymptomData, SymptomPrediction>(loadedModel);
+        ITransformer model = mlContext.Model.Load(modelPath, out var _);
+        var predictionEngine = mlContext.Model.CreatePredictionEngine<SymptomData, DoctorPrediction>(model);
 
-        var prediction = predictor.Predict(new SymptomData { SymptomText = symptom });
-        return prediction.PredictedLabel;
+        var result = predictionEngine.Predict(new SymptomData { SymptomText = symptom });
+
+        return result.PredictedLabel;
     }
 
 }

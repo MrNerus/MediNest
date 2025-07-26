@@ -3,12 +3,12 @@ namespace MediNest.Modals;
 
 public class SymptomData
 {
-    public required string SymptomText { get; set; }
+    public string SymptomText { get; set; }
+    public string? Label { get; set; }
 }
 
-public class SymptomPrediction
+public class DoctorPrediction
 {
     [ColumnName("PredictedLabel")]
     public string PredictedLabel { get; set; }
 }
-

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MediNest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79ce382b601d95fe743edb54a2a34d761533b066")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4114aa8157c615c1545d50a400ebf625fb4d3511")]
 [assembly: System.Reflection.AssemblyProductAttribute("MediNest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MediNest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
