@@ -1,0 +1,151 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("/image/nurse.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+.overlay {
+  background: rgba(255, 255, 255, 0.8);
+  height: 100%;
+  padding: 60px 40px;
+}
+
+.textContent {
+  max-width: 600px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dark {
+  background-color: #0284c7;
+  color: white;
+}
+
+.chatToggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0ea5e9;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chatbox {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 320px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.chatHeader {
+  background-color: #0ea5e9;
+  color: white;
+  padding: 10px 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.chatBody {
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.chatMessages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.userMsg {
+  align-self: flex-end;
+  background-color: #e0f2fe;
+  padding: 8px 12px;
+  border-radius: 6px;
+  max-width: 80%;
+}
+
+.botMsg {
+  align-self: flex-start;
+  background-color: #f1f5f9;
+  padding: 8px 12px;
+  border-radius: 6px;
+  max-width: 80%;
+}
+
+.chatInput {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.sendBtn {
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.closeBtn {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.chatOptions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.chatOptions button {
+  padding: 6px 12px;
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chatOptions button:hover {
+  background-color: #0284c7;
+}
+.overlay {
+  background: rgba(255, 255, 255, 0.8);
+  height: 100%;
+  padding: 60px 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.textContent {
+  max-width: 600px;
+  margin-top: 80px; /* 👈 pushes content downward */
+}

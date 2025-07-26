@@ -1,0 +1,158 @@
+.dashboardContainer {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to top right, #e0f2fe, #ffffff);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 18rem;
+  background: #f9fafb;
+  border-right: 1px solid #d1d5db;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+}
+
+.sidebarHeader {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 0.25rem;
+  cursor: pointer;
+}
+
+.subtext {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.navSection {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: auto;
+}
+
+.navButton {
+  background: transparent;
+  border: none;
+  padding: 0.75rem 1rem;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #374151;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navButton:hover {
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.navIcon {
+  color: #2563eb;
+  font-size: 1.25rem;
+}
+
+/* Main content */
+.contentArea {
+  flex-grow: 1;
+  padding: 2rem;
+  position: relative;
+}
+
+.mainContent {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 12px 20px rgba(37, 99, 235, 0.15);
+  padding: 2rem;
+  min-height: 18rem;
+}
+
+/* Form styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.input {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.5);
+}
+
+.submitBtn {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #1e40af;
+}
+
+.btnIcon {
+  font-size: 1.25rem;
+}
+
+/* Text styles */
+.textPrimary {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2563eb;
+  text-align: center;
+}
+
+.textGray {
+  font-size: 1rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+.textDanger {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #dc2626;
+  text-align: center;
+}

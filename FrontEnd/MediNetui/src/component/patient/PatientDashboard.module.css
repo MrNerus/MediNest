@@ -1,0 +1,104 @@
+.dashboardContainer {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to top right, #e0f2fe, #ffffff);
+}
+
+.contentArea {
+  flex: 1;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.profileCard {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 10px 15px rgba(59, 130, 246, 0.3);
+  width: 18rem;
+  text-align: center;
+  cursor: default;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  background: #bfdbfe;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.avatarIcon {
+  color: #2563eb;
+  font-size: 2rem;
+}
+
+.profileName {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #1e293b;
+}
+
+.profileEmail {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.roleTag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.roleIcon {
+  margin-right: 0.25rem;
+  color: #2563eb;
+}
+
+.mainContent {
+  margin-top: 6rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(59, 130, 246, 0.2);
+  min-height: 15rem;
+}
+
+.textPrimary {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.textDanger {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #dc2626;
+}
+
+.textGray {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.contentBox {
+  max-width: 600px;
+  margin: auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}

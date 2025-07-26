@@ -1,0 +1,145 @@
+.dashboardContainer {
+  display: flex;
+  height: 100vh;
+  background-color: #f9fafb;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+  width: 260px;
+  background: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #e5e7eb;
+}
+
+.sidebarHeader {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.subtext {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.navSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  border: none;
+  font-size: 0.95rem;
+  color: #374151;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.navButton:hover {
+  background-color: #e0f2fe;
+  color: #2563eb;
+}
+
+.navIcon {
+  color: #2563eb;
+  font-size: 1.2rem;
+}
+
+.contentArea {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.profileCard {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #dbeafe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.avatarIcon {
+  font-size: 2rem;
+  color: #2563eb;
+}
+
+.profileName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.profileEmail {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.roleTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #f0f9ff;
+  color: #2563eb;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+}
+
+.roleIcon {
+  font-size: 1rem;
+}
+
+.mainContent {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  min-height: 200px;
+}
+
+.textPrimary {
+  font-size: 1.1rem;
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.textDanger {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.textGray {
+  color: #6b7280;
+}
