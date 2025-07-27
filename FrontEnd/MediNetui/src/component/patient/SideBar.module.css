@@ -1,56 +1,152 @@
 .sidebar {
-  height: 100vh;
-  width: 18rem;
-  background: linear-gradient(to bottom, #f0f4ff, #ffffff);
-  border-right: 1px solid #e5e7eb;
-  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+  width: 260px;
+  background: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
+  border-right: 1px solid #e5e7eb;
+  font-family: "Poppins", sans-serif;
 }
 
-.header {
-  padding: 1.5rem;
-  border-bottom: 1px solid #e5e7eb;
+.sidebarHeader {
+  margin-bottom: 2rem;
   text-align: center;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #0284c7;
+  color: #2563eb;
 }
 
 .subtext {
   font-size: 0.875rem;
   color: #6b7280;
+  margin-top: 0.25rem;
 }
 
 .navSection {
-  flex: 1;
-  overflow-y: auto;
-  padding-top: 1rem;
+  display: flex;
+  flex-direction: column; /* Vertical stacking */
+  gap: 1rem; /* Space between buttons */
 }
 
 .navButton {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  width: 100%;
-  padding: 0.75rem 1.5rem;
-  text-align: left;
-  background: none;
+  display: flex; /* Flex container for icon + text */
+  align-items: center; /* Vertically center icon & text */
+  gap: 0.75rem; /* Space between icon and text */
+  padding: 0.75rem 1rem;
+  background: transparent;
   border: none;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #374151;
-  transition: background 0.2s ease;
+  border-radius: 0.5rem;
   cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  width: 100%; /* Full width */
+  text-align: left; /* Text aligned left */
 }
 
 .navButton:hover {
-  background-color: #dbeafe;
+  background-color: #e0f2fe;
+  color: #2563eb;
 }
 
-.icon {
-  color: #0284c7;
-  font-size: 1.25rem;
+.navIcon {
+  color: #2563eb;
+  font-size: 1.2rem;
+}
+.uploadBox {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f9fafb;
+  border: 1px dashed #cbd5e1;
+  border-radius: 0.5rem;
+}
+
+.uploadLabel {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.uploadInput {
+  font-size: 0.85rem;
+}
+
+.cardList {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.hospitalCard {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+}
+.uploadBox {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.uploadLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.uploadInput {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.imageList h4 {
+  margin: 0.5rem 0;
+}
+
+.fileList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.fileList li {
+  margin-bottom: 0.25rem;
+}
+.historyTableBox {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.historyTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.historyTable th,
+.historyTable td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.historyTable img {
+  border-radius: 4px;
 }

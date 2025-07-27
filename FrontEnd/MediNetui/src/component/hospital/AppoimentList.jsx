@@ -3,28 +3,47 @@ import { useQuery } from "@tanstack/react-query";
 import { motion } from "framer-motion";
 import styles from "./AppoimentList.module.css";
 
+// Fetch with JWT
 const fetchAppointments = async () => {
+  const token = localStorage.getItem("token");
   const res = await fetch(
-    "http://localhost:510/server/api/appointment/getAppointments"
+    "http://ardhost:510/server/api/hospital/getUpcommingAppointmentdetails",
+    {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }
   );
-  return res.json();
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch appointments");
+  }
+
+  const result = await res.json();
+  return result.data || []; // assuming data is inside `data` field
 };
 
 const AppointmentList = () => {
-  const { data = [], isLoading } = useQuery({
+  const {
+    data = [],
+    isLoading,
+    error,
+  } = useQuery({
     queryKey: ["appointments"],
     queryFn: fetchAppointments,
   });
 
   if (isLoading) return <p>Loading appointments...</p>;
+  if (error) return <p>Error loading appointments: {error.message}</p>;
 
-  const upcoming = data.filter((a) => new Date(a.date) > new Date());
-  const scheduled = data.filter((a) => new Date(a.date) <= new Date());
+  const now = new Date();
+  const upcoming = data.filter((a) => new Date(a.date) > now);
+  const scheduled = data.filter((a) => new Date(a.date) <= now);
 
   const renderAppointments = (list, type) =>
     list.map((app, index) => (
       <motion.li
-        key={app._id}
+        key={app._id || app.id || index}
         className={styles.appointmentItem}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -38,7 +57,8 @@ const AppointmentList = () => {
             <strong>Doctor:</strong> {app.doctorName}
           </div>
           <div>
-            <strong>Date:</strong> {new Date(app.date).toLocaleString()}
+            <strong>Date:</strong>{" "}
+            {app.date ? new Date(app.date).toLocaleString() : "N/A"}
           </div>
           <div
             className={`${styles.status} ${

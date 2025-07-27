@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useMutation } from "@tanstack/react-query";
+import { useNavigate } from "react-router-dom";
 import styles from "./PatientRegister.module.css";
 
 const PatientRegister = ({ onClose }) => {
+  const navigate = useNavigate();
+
   const [form, setForm] = useState({
     username: "",
     name: "",
@@ -11,6 +14,8 @@ const PatientRegister = ({ onClose }) => {
     phone: "",
     email: "",
     address: "",
+    password: "",
+    confirmPassword: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -31,18 +36,23 @@ const PatientRegister = ({ onClose }) => {
     else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(form.email))
       newErrors.email = "Invalid email address";
     if (!form.address.trim()) newErrors.address = "Address is required";
+    if (!form.password.trim()) newErrors.password = "Password is required";
+    if (form.password !== form.confirmPassword)
+      newErrors.confirmPassword = "Passwords do not match";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
   const registerPatient = async (formData) => {
+    const { confirmPassword, ...submitData } = formData;
+
     const res = await fetch("http://ardhost:510/server/api/patient/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify(submitData),
     });
 
     if (!res.ok) {
@@ -53,7 +63,7 @@ const PatientRegister = ({ onClose }) => {
     return res.json();
   };
 
-  const { mutate, isLoading, isError, error } = useMutation({
+  const { mutate, isLoading } = useMutation({
     mutationFn: registerPatient,
     onSuccess: () => {
       alert("Registered successfully!");
@@ -64,9 +74,15 @@ const PatientRegister = ({ onClose }) => {
         phone: "",
         email: "",
         address: "",
+        password: "",
+        confirmPassword: "",
       });
       setErrors({});
       onClose();
+      navigate("/");
+    },
+    onError: (error) => {
+      alert("Registration failed: " + error.message);
     },
   });
 
@@ -125,6 +141,12 @@ const PatientRegister = ({ onClose }) => {
               placeholder: "Digits only",
             },
             { label: "Email", name: "email", type: "email" },
+            { label: "Password", name: "password", type: "password" },
+            {
+              label: "Confirm Password",
+              name: "confirmPassword",
+              type: "password",
+            },
           ].map(({ label, name, type, placeholder }) => (
             <div key={name}>
               <label htmlFor={name} className={styles.label}>
@@ -190,10 +212,6 @@ const PatientRegister = ({ onClose }) => {
           >
             {isLoading ? "Registering..." : "Sign Up"}
           </button>
-
-          {isError && (
-            <p className={styles.errorText}>Error: {error.message}</p>
-          )}
         </form>
       </motion.div>
     </motion.div>

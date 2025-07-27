@@ -1,39 +1,100 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { jwtDecode } from "jwt-decode"; // ✅ FIXED
 
 const AuthContext = createContext();
 
-const fetchPatients = async () => {
-  const res = await fetch("http://ard:510/server/api/patient/getPatients");
-  if (!res.ok) throw new Error("Failed to fetch patients");
-  return res.json();
-};
-
 const fetchDoctors = async () => {
-  const res = await fetch("http://ardhost:510/server/api/doctor/getDoctors");
+  const res = await fetch("http://ardhost:510/server/api/doctor/getDoctors", {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("token")}`,
+    },
+  });
   if (!res.ok) throw new Error("Failed to fetch doctors");
   return res.json();
 };
 
-// const fetchSuperAdmins = async () => {
-//   const res = await fetch(
-//     "http://ardhost:510/server/api/superadmin/getSuperAdmins"
-//   );
-//   if (!res.ok) throw new Error("Failed to fetch super admins");
-//   return res.json();
-// };
+const fetchPatients = async () => {
+  const res = await fetch("http://ardhost:510/server/api/patient/getPatients", {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("token")}`,
+    },
+  });
+  if (!res.ok) throw new Error("Failed to fetch patients");
+  return res.json();
+};
 
 export const AuthProvider = ({ children }) => {
-  const [currentUser, setCurrentUser] = useState(null);
-
-  const {
-    data: patients = [],
-    error: patientError,
-    isLoading: loadingPatients,
-  } = useQuery({
-    queryKey: ["patients"],
-    queryFn: fetchPatients,
+  const [currentUser, setCurrentUser] = useState(() => {
+    const storedUser = localStorage.getItem("user");
+    if (!storedUser || storedUser === "undefined") return null;
+    try {
+      return JSON.parse(storedUser);
+    } catch {
+      return null;
+    }
   });
+
+  const login = async ({ username, password, role }) => {
+    try {
+      const res = await fetch("http://ardhost:510/server/api/identity/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password, role }),
+      });
+
+      if (!res.ok) return false;
+
+      const data = await res.json();
+
+      if (data.data && data.data.token) {
+        const ROLE_CLAIM =
+          "http://schemas.microsoft.com/ws/2008/06/identity/claims/role";
+
+        const decoded = jwtDecode(data.data.token); // ✅ FIXED usage
+        const userRole = decoded[ROLE_CLAIM] || "User";
+
+        localStorage.setItem("token", data.data.token);
+        localStorage.setItem(
+          "user",
+          JSON.stringify({
+            username: data.data.username,
+            role: userRole,
+          })
+        );
+
+        setCurrentUser({
+          username: data.data.username,
+          role: userRole,
+        });
+
+        return true;
+      } else {
+        console.error("Invalid login response:", data);
+        return false;
+      }
+    } catch (err) {
+      console.error("Login error", err);
+      return false;
+    }
+  };
+
+  const logout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+    setCurrentUser(null);
+  };
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem("user");
+    if (storedUser && storedUser !== "undefined") {
+      try {
+        setCurrentUser(JSON.parse(storedUser));
+      } catch {
+        setCurrentUser(null);
+      }
+    }
+  }, []);
 
   const {
     data: doctors = [],
@@ -42,76 +103,34 @@ export const AuthProvider = ({ children }) => {
   } = useQuery({
     queryKey: ["doctors"],
     queryFn: fetchDoctors,
+    enabled: !!currentUser,
   });
 
-  // const {
-  //   data: superadmins = [],
-  //   error: superadminError,
-  //   isLoading: loadingSuperadmins,
-  // } = useQuery({
-  //   queryKey: ["superadmins"],
-  //   queryFn: fetchSuperAdmins,
-  // });
+  const {
+    data: patients = [],
+    error: patientError,
+    isLoading: loadingPatients,
+  } = useQuery({
+    queryKey: ["patients"],
+    queryFn: fetchPatients,
+    enabled: !!currentUser,
+  });
 
-  const isLoading = loadingPatients || loadingDoctors || loadingSuperadmins;
-  // const hasError = patientError || doctorError || superadminError;
-
-  // Log errors if any
-  if (patientError) console.error("Patient fetch error:", patientError);
-  if (doctorError) console.error("Doctor fetch error:", doctorError);
-  // if (superadminError)
-  //   console.error("SuperAdmin fetch error:", superadminError);
-
-  const login = ({ username, password, role }) => {
-    if (hasError) {
-      alert("Something went wrong. Please try again later.");
-      return false;
-    }
-
-    if (isLoading) {
-      alert("User data is still loading. Please wait.");
-      return false;
-    }
-
-    let foundUser = null;
-    const uname = username.toLowerCase();
-    const urole = role.toLowerCase();
-
-    if (urole === "user" || urole === "patient") {
-      foundUser = patients.find(
-        (p) => p.username.toLowerCase() === uname && p.password === password
-      );
-      if (foundUser) foundUser.role = "User";
-    } else if (urole === "doctor") {
-      foundUser = doctors.find(
-        (d) => d.username.toLowerCase() === uname && d.password === password
-      );
-      if (foundUser) foundUser.role = "Doctor";
-    } else if (urole === "superadmin") {
-      foundUser = superadmins.find(
-        (s) => s.username.toLowerCase() === uname && s.password === password
-      );
-      if (foundUser) foundUser.role = "SuperAdmin";
-    } else {
-      alert("Invalid role.");
-      return false;
-    }
-
-    if (foundUser) {
-      setCurrentUser(foundUser);
-      return true;
-    } else {
-      alert("Invalid credentials.");
-      return false;
-    }
-  };
-
-  const logout = () => {
-    setCurrentUser(null);
-  };
+  if (doctorError) console.error("Doctors fetch error:", doctorError);
+  if (patientError) console.error("Patients fetch error:", patientError);
 
   return (
-    <AuthContext.Provider value={{ currentUser, login, logout }}>
+    <AuthContext.Provider
+      value={{
+        currentUser,
+        login,
+        logout,
+        doctors,
+        patients,
+        loadingDoctors,
+        loadingPatients,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );

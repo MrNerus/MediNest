@@ -8,45 +8,31 @@ import Contact from "./component/contact/Contact";
 import PatientDashboard from "./component/patient/PatientDashboard";
 import DoctorDashboard from "./component/Doctor/DoctorDashboard";
 import SuperAdminDashboard from "./component/superadmin/SuperAdminDashBoard";
-import { useAuth } from "./component/golbal/AuthContext";
 import Hospital from "./component/hospital/Hospital";
+import { useAuth } from "./component/golbal/AuthContext";
 
 const App = () => {
   const { currentUser } = useAuth();
 
-  const renderDashboard = () => {
-    switch (currentUser?.role) {
-      case "User":
-        return <PatientDashboard />;
-      case "Doctor":
-        return <DoctorDashboard />;
-      case "SuperAdmin":
-        return <SuperAdminDashboard />;
-      // case "Hospital":
-      //   return <HospitalDashboard />;
-      default:
-        return null;
-    }
-  };
-
   return (
     <>
-      {!currentUser && <Navbar />}
-      {currentUser ? (
-        renderDashboard()
-      ) : (
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/service" element={<Service />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      )}
+      <Navbar />
+      <Routes>
+        {/* Public routes */}
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/contact" element={<Contact />} />
 
-      {/* <PatientDashboard />
-      <DoctorDashboard />
-      <SuperAdminDashboard /> */}
-      {/* <Hospital /> */}
+        {/* Role-based dashboards */}
+        <Route path="/user-dashboard" element={<PatientDashboard />} />
+        <Route path="/doctor-dashboard" element={<DoctorDashboard />} />
+        <Route path="/superadmin-dashboard" element={<SuperAdminDashboard />} />
+        <Route path="/hospital-dashboard" element={<Hospital />} />
+
+        {/* Fallback route */}
+        <Route path="*" element={<Home />} />
+      </Routes>
     </>
   );
 };

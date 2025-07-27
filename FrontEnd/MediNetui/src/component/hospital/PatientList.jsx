@@ -4,10 +4,14 @@ import { motion } from "framer-motion";
 import styles from "./PatientList.module.css";
 
 const fetchPatients = async () => {
-  const res = await fetch(
-    "http://localhost:510/server/api/patient/getPatients"
-  );
-  return res.json();
+  const token = localStorage.getItem("token");
+  const res = await fetch("http://ardhost:510/server/api/patient/getPatients", {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  const result = await res.json();
+  return result.data || [];
 };
 
 const PatientList = () => {
@@ -44,7 +48,7 @@ const PatientList = () => {
       >
         {data.map((patient, index) => (
           <motion.li
-            key={patient._id}
+            key={patient.id}
             className={styles.patientItem}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -56,10 +60,16 @@ const PatientList = () => {
                 <strong>Name:</strong> {patient.name}
               </div>
               <div>
-                <strong>Age:</strong> {patient.age}
+                <strong>Gender:</strong> {patient.gender}
+              </div>
+              <div>
+                <strong>Phone:</strong> {patient.phone}
               </div>
               <div>
                 <strong>Email:</strong> {patient.email}
+              </div>
+              <div>
+                <strong>Address:</strong> {patient.address}
               </div>
             </div>
             <div className={styles.actions}>
@@ -77,7 +87,7 @@ const PatientList = () => {
               </button>
               <button
                 className={`${styles.button} ${styles.delete}`}
-                onClick={() => handleDelete(patient._id)}
+                onClick={() => handleDelete(patient.id)}
               >
                 Delete
               </button>

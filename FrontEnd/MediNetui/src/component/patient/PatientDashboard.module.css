@@ -1,104 +1,281 @@
 .dashboardContainer {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.header {
+  background-color: #4f46e5;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.role {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar button {
+  padding: 10px;
+  border: none;
+  background-color: #e0e7ff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.mainSection {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.appointmentForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.appointmentForm input,
+.appointmentForm select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.appointmentForm button {
+  background-color: #4f46e5;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.upcoming {
+  margin-top: 30px;
+}
+
+.upcoming table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.upcoming th,
+.upcoming td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.dashboardContainer {
   display: flex;
   min-height: 100vh;
-  background: linear-gradient(to top right, #e0f2fe, #ffffff);
 }
-
 .contentArea {
   flex: 1;
-  padding: 1.5rem;
+  padding: 1rem;
   position: relative;
 }
-
-.profileCard {
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-  background: white;
-  border-radius: 1rem;
-  padding: 1rem 1.5rem;
-  box-shadow: 0 10px 15px rgba(59, 130, 246, 0.3);
-  width: 18rem;
-  text-align: center;
-  cursor: default;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
 }
-
-.avatar {
-  width: 80px;
-  height: 80px;
-  background: #bfdbfe;
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.userAvatar {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  background: #3b82f6;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
 }
-
-.avatarIcon {
-  color: #2563eb;
-  font-size: 2rem;
+.userInfo strong {
+  display: block;
 }
-
-.profileName {
+.userInfo p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+.mainSection {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.mainContent {
+  flex: 1;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 400px;
+}
+.form label {
   font-weight: 600;
-  font-size: 1.125rem;
-  color: #1e293b;
 }
-
-.profileEmail {
-  font-size: 0.875rem;
-  color: #64748b;
+.form input,
+.form select,
+.form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+.submitBtn,
+.form button {
+  padding: 0.6rem 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.appointmentCard {
+  background: #f1f5f9;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+.appointmentCard button {
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+.chatBoxSide {
+  width: 260px;
+  background: #f0f9ff;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.chatMessages {
+  max-height: 300px;
+  overflow-y: auto;
   margin-bottom: 0.5rem;
 }
-
-.roleTag {
+.userMessage {
+  align-self: flex-end;
+  background: #dbeafe;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  max-width: 80%;
+}
+.botMessage {
+  align-self: flex-start;
+  background: #e2e8f0;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  max-width: 80%;
+}
+.chatOptions {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #64748b;
-  font-size: 0.875rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.chatOptions button {
+  background: #e5e7eb;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.chatInput {
+  display: flex;
+  gap: 0.5rem;
+}
+.chatInput input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+.chatInput button {
+  background: #3b82f6;
+  color: white;
+  padding: 0 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.list {
+  list-style: none;
+  padding: 0;
+}
+.list li {
+  margin-bottom: 0.5rem;
+}
+.loading,
+.error {
+  padding: 1rem;
+  text-align: center;
+}
+.primaryButton {
+  padding: 0.6rem 1.2rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.optionList {
+  list-style-type: none;
+  padding-left: 10px;
+  margin: 10px 0;
+  border-left: 3px solid #3182ce;
 }
 
-.roleIcon {
-  margin-right: 0.25rem;
-  color: #2563eb;
-}
-
-.mainContent {
-  margin-top: 6rem;
-  background: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 15px rgba(59, 130, 246, 0.2);
-  min-height: 15rem;
-}
-
-.textPrimary {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #2563eb;
-}
-
-.textDanger {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #dc2626;
-}
-
-.textGray {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #64748b;
-}
-
-.contentBox {
-  max-width: 600px;
-  margin: auto;
-}
-
-.title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #1e293b;
-  margin-bottom: 1rem;
+.optionItem {
+  margin-bottom: 6px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #333;
 }

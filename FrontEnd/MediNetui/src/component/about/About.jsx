@@ -12,7 +12,7 @@ const About = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
         >
-          About MeDINEST
+          About MediNEST
         </motion.h2>
 
         <motion.p
